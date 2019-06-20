@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+/**
+时间复杂度：O(n)
+*/
 func convert(s string, numRows int) string {
 	//step1: 参数检查
 	if s == "" || numRows <= 0 {
