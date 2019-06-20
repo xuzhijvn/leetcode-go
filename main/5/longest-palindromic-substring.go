@@ -6,11 +6,16 @@ import (
 	"time"
 )
 
+/**
+时间复杂度O(n^2)
+*/
 func longestPalindrome(s string) string {
 	if s == "" {
 		return ""
 	}
+	//step1 : abcbd -> #a#b#c#b#d#
 	s = getHelpString(s)
+	//step2 : for loop
 	longest := 1
 	res := ""
 	for i := 0; i < len(s); i++ {
